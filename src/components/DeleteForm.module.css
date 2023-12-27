@@ -1,0 +1,33 @@
+.modal{
+    position: fixed;
+    z-index: 100;
+    inset: 0;
+    padding-inline: 2vmax;
+    display: grid;
+    place-items: center;
+    background-color: hsl(var(--bg) / 0.7);
+}
+
+.modal__content{
+    font-size: var(--_size);
+    border: 0.1em solid hsl(var(--accent) / 0.3);
+    padding: .6em;
+    background-color: hsl(var(--bg));
+    border-radius: calc(var(--_radius) * 2);
+    box-shadow: 0 -1em 3em hsl(var(--muted)), 0 1em 3em hsl(var(--accent) / 0.2);
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+    line-height: 1.4;
+}
+
+.modal__header, modal__footer{
+    padding: 12px;
+}
+.modal__footer{
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+}
+
+
